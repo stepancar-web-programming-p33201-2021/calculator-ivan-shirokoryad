@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 export const NumberContext = React.createContext();
 
@@ -46,27 +46,27 @@ const NumberProvider = (props) => {
             switch (functionType) {
                 case '+':
                     setFirstNumber(
-                        `${Math.round(`${(parseFloat(firstNumber) + parseFloat(number)) * 100}`) / 100}`
+                        `${Math.round((parseFloat(firstNumber) + parseFloat(number)) * 100) / 100}`
                     );
                     break;
                 case '-':
                     setFirstNumber(
-                        `${Math.round(`${(parseFloat(firstNumber) - parseFloat(number)) * 1000}`) / 1000}`
+                        `${Math.round((parseFloat(firstNumber) - parseFloat(number)) * 1000) / 1000}`
                     );
                     break;
                 case '/':
                     setFirstNumber(
-                        `${Math.round(`${(parseFloat(firstNumber) / parseFloat(number)) * 1000}`) / 1000}`
+                        `${Math.round((parseFloat(firstNumber) / parseFloat(number)) * 1000) / 1000}`
                     );
                     break;
                 case '*':
                     setFirstNumber(
-                        `${Math.round(`${parseFloat(firstNumber) * parseFloat(number) * 1000}`) / 1000}`
+                        `${Math.round(parseFloat(firstNumber) * parseFloat(number) * 1000) / 1000}`
                     );
                     break;
                 case '^':
                     setFirstNumber(
-                        `${Math.round(`${Math.pow(parseFloat(firstNumber),parseFloat(number))}`)}`
+                        `${Math.round(Math.pow(parseFloat(firstNumber), parseFloat(number)))}`
                     );
                     break;
                 default:
@@ -79,7 +79,7 @@ const NumberProvider = (props) => {
     return (
         <NumberContext.Provider
             value={{
-                calculateResult: calculateResult,
+                calculateResult,
                 functionType,
                 handleBackButton,
                 handleClearValue,

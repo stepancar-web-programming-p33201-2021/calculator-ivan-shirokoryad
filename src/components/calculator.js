@@ -7,8 +7,6 @@ import EqualButton from './equalButton';
 import BackButton from './backButton';
 import { CalculatorStyles } from '../styles/styles';
 
-// Keyboard;
-
 const Calculator = () => (
     <CalculatorStyles>
         <div className='display'>
