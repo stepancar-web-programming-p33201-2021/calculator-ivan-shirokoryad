@@ -5,7 +5,6 @@ import ClearButton from './clearButton';
 import Display from './display';
 import EqualButton from './equalButton';
 import BackButton from './backButton';
-import Keyboard from './keyboard';
 import { CalculatorStyles } from '../styles/styles';
 
 // Keyboard;

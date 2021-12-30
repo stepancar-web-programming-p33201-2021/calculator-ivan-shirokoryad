@@ -86,7 +86,6 @@ const NumberProvider = (props) => {
                 handleSetCalcFunction,
                 handleSetDisplayValue,
                 handleSetStoredValue,
-                // handleToggleNegative,
                 number,
                 storedNumber: firstNumber,
                 setNumber,
